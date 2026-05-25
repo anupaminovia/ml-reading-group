@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule · Inovia ML Reading Group</title>
+  <meta name="description" content="Upcoming and past sessions of the Inovia ML Reading Group." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">/\</span>
+        <span class="logo-text">Inovia <span class="logo-accent">ML Reading Group</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html" class="active">Schedule</a>
+        <a href="resources.html">Resources</a>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Schedule</p>
+        <h1>Upcoming &amp; past sessions</h1>
+        <p class="lede">
+          A running calendar of what we've covered and what's coming up. Want to present?
+          Open an issue or PR on the repo with a topic and a short blurb.
+        </p>
+        <dl class="meta-list">
+          <div><dt>When</dt><dd>Weekly · time TBA</dd></div>
+          <div><dt>Where</dt><dd>Hybrid · link shared on the repo</dd></div>
+          <div><dt>Who</dt><dd>You, if you're interested in ML</dd></div>
+          <div><dt>Contact</dt><dd><a href="https://github.com/anupaminovia/ml-reading-group/issues/new" target="_blank" rel="noopener">Open an issue →</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Upcoming speakers</h2>
+        <div class="table-wrap">
+          <table class="calendar">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Presenter</th>
+                <th scope="col">Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="date-cell">TBA</span></td>
+                <td>—</td>
+                <td><span class="muted">Lineup being finalized — check back soon.</span></td>
+              </tr>
+              <tr>
+                <td><span class="date-cell">TBA</span></td>
+                <td>—</td>
+                <td><span class="muted">Want this slot? <a href="https://github.com/anupaminovia/ml-reading-group/issues/new" target="_blank" rel="noopener">Propose a topic</a>.</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Past sessions</h2>
+        <div class="table-wrap">
+          <table class="calendar">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Presenter</th>
+                <th scope="col">Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="3" class="empty-row">
+                  No past sessions yet — this archive will fill out as the group meets.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-card">
+        <div>
+          <h2>Want to present?</h2>
+          <p>We're always looking for guests across the ML stack — hardware, training, eval, applications, the works.</p>
+        </div>
+        <a class="btn btn-primary" href="https://github.com/anupaminovia/ml-reading-group/issues/new" target="_blank" rel="noopener">Propose a topic →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Inovia ML Reading Group</p>
+      <p>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

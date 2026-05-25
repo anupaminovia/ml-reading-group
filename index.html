@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inovia ML Reading Group</title>
+  <meta name="description" content="Inovia's weekly Machine Learning Reading Group — high-level tutorials and discussions on the modern ML ecosystem, from FPGAs to virtual cell foundation models." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">/\</span>
+        <span class="logo-text">Inovia <span class="logo-accent">ML Reading Group</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="resources.html">Resources</a>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Weekly · Open to all</p>
+        <h1>
+          Understand the modern ML stack,<br />
+          <span class="gradient-text">one paper at a time.</span>
+        </h1>
+        <p class="lede">
+          Inovia's weekly Machine Learning Reading Group brings together researchers, engineers,
+          and curious tinkerers from across the ML ecosystem — from FPGA design to virtual cell
+          foundation models. Expect high-level tutorials, honest discussion, and a holistic look
+          at where ML is going.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="schedule.html">View schedule</a>
+          <a class="btn btn-ghost" href="resources.html">Browse resources</a>
+        </div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What we cover</h2>
+          <p>A rotating tour through the layers of modern machine learning.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon">⊞</div>
+            <h3>Hardware &amp; Systems</h3>
+            <p>FPGAs, accelerators, distributed training, inference stacks, and the silicon that makes scale possible.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">∑</div>
+            <h3>Foundation Models</h3>
+            <p>LLMs, multimodal models, virtual cell models, and the architectures &amp; training recipes behind them.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">◇</div>
+            <h3>Applied ML</h3>
+            <p>From biology and chemistry to robotics and creative tooling — how ML lands in the real world.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Next session</p>
+          <h2>Coming up</h2>
+          <p class="lede small">
+            Sessions run weekly. Each meeting features a guest tinkerer or researcher walking us
+            through a topic they know deeply, followed by open discussion.
+          </p>
+          <a class="btn btn-primary" href="schedule.html">See full schedule →</a>
+        </div>
+        <div class="upcoming-card">
+          <div class="upcoming-date">
+            <span class="month">TBA</span>
+            <span class="day">—</span>
+          </div>
+          <div class="upcoming-body">
+            <p class="upcoming-label">Upcoming · Reading Group</p>
+            <h3>Next session details coming soon</h3>
+            <p>Check the schedule page or the GitHub repo for the latest lineup, papers, and dial-in info.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>How it works</h2>
+          <p>Show up curious. Leave with a sharper mental model.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Pick a topic</h3>
+            <p>A guest selects a paper, system, or theme — usually something they've shipped or studied closely.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>High-level tutorial</h3>
+            <p>~30 minutes of context, intuition, and the key technical ideas — no slide-deck dogma required.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Open discussion</h3>
+            <p>We dig into limitations, future directions, and how it fits into the broader ML stack.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Inovia ML Reading Group</p>
+      <p>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

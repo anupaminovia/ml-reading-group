@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources · Inovia ML Reading Group</title>
+  <meta name="description" content="Curated papers, blog posts, and learning resources from the Inovia ML Reading Group." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">/\</span>
+        <span class="logo-text">Inovia <span class="logo-accent">ML Reading Group</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Resources</p>
+        <h1>Curated reading</h1>
+        <p class="lede">
+          A starter pack of papers, posts, and tools — organized by where they sit in the ML stack.
+          Want to add something? Open a PR.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Hardware &amp; systems</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://arxiv.org/abs/2205.14135" target="_blank" rel="noopener">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a>
+            <span class="meta">Dao et al., 2022</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/1602.04012" target="_blank" rel="noopener">In-Datacenter Performance Analysis of a TPU</a>
+            <span class="meta">Jouppi et al.</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/1909.08053" target="_blank" rel="noopener">Megatron-LM: Training Multi-Billion Parameter Language Models</a>
+            <span class="meta">Shoeybi et al., 2019</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Foundation models</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">Attention Is All You Need</a>
+            <span class="meta">Vaswani et al., 2017</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2203.15556" target="_blank" rel="noopener">Training Compute-Optimal Large Language Models (Chinchilla)</a>
+            <span class="meta">Hoffmann et al., 2022</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2302.13971" target="_blank" rel="noopener">LLaMA: Open and Efficient Foundation Language Models</a>
+            <span class="meta">Touvron et al., 2023</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Bio &amp; virtual cells</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://www.nature.com/articles/s41586-021-03819-2" target="_blank" rel="noopener">Highly accurate protein structure prediction with AlphaFold</a>
+            <span class="meta">Jumper et al., Nature 2021</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2302.03540" target="_blank" rel="noopener">scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics</a>
+            <span class="meta">Cui et al., 2023</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Background &amp; primers</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://distill.pub/" target="_blank" rel="noopener">Distill.pub — interactive ML explainers</a>
+            <span class="meta">distill.pub</span>
+          </li>
+          <li>
+            <a href="https://www.deeplearningbook.org/" target="_blank" rel="noopener">Deep Learning (Goodfellow, Bengio, Courville)</a>
+            <span class="meta">Free online textbook</span>
+          </li>
+          <li>
+            <a href="https://karpathy.ai/zero-to-hero.html" target="_blank" rel="noopener">Neural Networks: Zero to Hero</a>
+            <span class="meta">Andrej Karpathy</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-card">
+        <div>
+          <h2>Got a great resource?</h2>
+          <p>PRs welcome. Keep entries short, link to the original, and group by topic.</p>
+        </div>
+        <a class="btn btn-primary" href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">Contribute on GitHub →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Inovia ML Reading Group</p>
+      <p>
+        <a href="https://github.com/anupaminovia/ml-reading-group" target="_blank" rel="noopener">View on GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
